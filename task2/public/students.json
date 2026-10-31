@@ -1,0 +1,14 @@
+[
+  { "id": 1, "rollNo": 101, "name": "Ali Raza", "grade": "9th", "marks": 78, "city": "Lahore" },
+  { "id": 2, "rollNo": 102, "name": "Ayesha Khan", "grade": "10th", "marks": 92, "city": "Karachi" },
+  { "id": 3, "rollNo": 103, "name": "Hamza Ahmed", "grade": "11th", "marks": 35, "city": "Multan" },
+  { "id": 4, "rollNo": 104, "name": "Fatima Noor", "grade": "9th", "marks": 64, "city": "Islamabad" },
+  { "id": 5, "rollNo": 105, "name": "Usman Tariq", "grade": "10th", "marks": 41, "city": "Lahore" },
+  { "id": 6, "rollNo": 106, "name": "Sara Malik", "grade": "11th", "marks": 88, "city": "Karachi" },
+  { "id": 7, "rollNo": 107, "name": "Bilal Hussain", "grade": "9th", "marks": 29, "city": "Multan" },
+  { "id": 8, "rollNo": 108, "name": "Zainab Iqbal", "grade": "10th", "marks": 73, "city": "Islamabad" },
+  { "id": 9, "rollNo": 109, "name": "Hassan Ali", "grade": "11th", "marks": 56, "city": "Lahore" },
+  { "id": 10, "rollNo": 110, "name": "Maryam Shah", "grade": "9th", "marks": 95, "city": "Karachi" },
+  { "id": 11, "rollNo": 111, "name": "Ahmad Farooq", "grade": "10th", "marks": 38, "city": "Multan" },
+  { "id": 12, "rollNo": 112, "name": "Hira Sheikh", "grade": "11th", "marks": 67, "city": "Islamabad" }
+]

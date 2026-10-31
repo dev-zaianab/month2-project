@@ -1,0 +1,60 @@
+:root {
+  --bg: #f4f6fb; --card: #fff; --text: #0f172a; --muted: #64748b; --border: #e5e9f2;
+  --accent: #4f46e5; --accent2: #7c3aed; --danger: #dc2626; --chip: #eef2ff;
+  --hi: #fee2e2; --hit: #b91c1c; --me: #fef3c7; --met: #b45309; --lo: #dcfce7; --lot: #15803d;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #0b1020; --card: #151b30; --text: #e8ecf8; --muted: #8d97b5; --border: #262e4a;
+  --accent: #818cf8; --accent2: #a78bfa; --danger: #f87171; --chip: #222a4a;
+  --hi: #4c1d1d; --hit: #fca5a5; --me: #4a3410; --met: #fcd34d; --lo: #123524; --lot: #86efac;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.4; }
+.app { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; }
+
+.header { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; border-radius: 18px; padding: 22px; margin-bottom: 18px; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.header h1 { margin: 0; font-size: 24px; }
+.header .sub { opacity: .85; font-size: 13px; margin-top: 2px; }
+.icon-btn { background: rgba(255,255,255,.18); border: none; color: #fff; width: 38px; height: 38px; border-radius: 10px; cursor: pointer; font-size: 17px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 16px 0 12px; }
+.stat { background: rgba(255,255,255,.15); border-radius: 12px; padding: 10px; text-align: center; }
+.stat b { display: block; font-size: 20px; }
+.stat span { font-size: 11px; opacity: .85; }
+.bar { height: 8px; background: rgba(255,255,255,.25); border-radius: 99px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: #fff; border-radius: 99px; transition: width .3s; }
+
+.panel { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px; margin-bottom: 14px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+input[type=text], input[type=date], select { padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; font-size: 14px; background: var(--bg); color: var(--text); font-family: inherit; }
+input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.grow { flex: 1; min-width: 150px; }
+.input-error { border-color: var(--danger) !important; }
+.err { color: var(--danger); font-size: 13px; margin: 8px 0 0; }
+
+.btn { padding: 10px 16px; border: none; border-radius: 10px; background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; font-size: 14px; }
+.btn.danger { background: transparent; color: var(--danger); border: 1px solid var(--border); }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.tab { padding: 6px 12px; border-radius: 99px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; font-size: 13px; }
+.tab.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.list { list-style: none; padding: 0; margin: 0; }
+.item { display: flex; gap: 12px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 12px 14px; margin-bottom: 8px; }
+.item .body { flex: 1; min-width: 0; }
+.item .t { font-weight: 600; word-break: break-word; }
+.item.done .t { text-decoration: line-through; color: var(--muted); font-weight: 500; }
+.edit-input { width: 100%; }
+.meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; font-size: 12px; color: var(--muted); align-items: center; }
+.badge { padding: 2px 8px; border-radius: 99px; font-weight: 600; font-size: 11px; }
+.b-High { background: var(--hi); color: var(--hit); }
+.b-Medium { background: var(--me); color: var(--met); }
+.b-Low { background: var(--lo); color: var(--lot); }
+.over { color: var(--danger); font-weight: 600; }
+.chk { width: 20px; height: 20px; accent-color: var(--accent); cursor: pointer; }
+.acts { display: flex; gap: 4px; }
+.acts button { background: transparent; border: none; cursor: pointer; font-size: 15px; padding: 6px; border-radius: 8px; color: var(--muted); }
+.acts button:hover { background: var(--chip); }
+.empty { text-align: center; color: var(--muted); padding: 36px 12px; }
+.foot { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 13px; margin-top: 12px; }
